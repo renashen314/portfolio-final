@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewing Coffee</title>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="image/favicon_io/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WGZVY640E3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-WGZVY640E3');
+    </script>
+    <script src="js/script.js"></script>
+</head>
+
+<body class="content-box">
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="current" href="brew.html">Brew Guide</a></li>
+                <li><a href="shop.html">Shop Local Coffee</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="hero-image-brew">
+                <div class="hero-text-brew">
+                    <div class="skip"><a href="index.html">Skip to the main content</a></div>
+                    <h1>Coffee Brewing Methods</h1>
+                    <p>There are many ways to brew your perfect cup!</p>
+                    <!-- <img class="hero-image" src="/image/gallery/background-hero-barista.jpg" alt="Background image of a barista pouring latte"> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="flex-content">
+            <aside>
+                These days, with so many different ways to make coffee at home, you can feel overwhelmed even before you begin. We’re here to make it simpler for you. From our mainstay, the pour over, to the esoteric siphon pot, we’ll break down the different ways to make coffee, highlighting the qualities in each finished cup and the technical chops each method requires. By identifying the kind of coffee that you’re after and how much work you’re willing to do, you’ll be able to navigate your way to your preferred brew method. 
+            </aside>
+            <div class="container">
+                <h2>
+                    The Differences Among Coffee Brewing Methods
+                </h2>
+                <p>
+                    All you need to make coffee is ground coffee, water, and a filter. But to understand the differences among coffee brewing methods, from start to finish, we’ll look at the following variables: the texture or mouthfeel of the finished drink (or “why we like it”); the filter material, brewing process, and tips for grind size (or “how it works”); and the ideal mind-set and prior experience of the home brewer (or “who’s it for”). 
+                </p>
+            </div>
+            <button class="collapsible">French Press</button>
+            <div class="content">
+                <img src="image/gallery/french-press.png" alt="french press" class="item">
+                <p>French press coffee is a method of brewing coffee that uses a device called a “French Press.” A French press is like a plunger that meets a strainer. It allows you to brew ground coffee in a container by brewing, pressing , and straining all in one.
+                After the coffee is brewed, you press the ground coffee beans to the bottom of the beaker with a fine mesh strainer, which leaves you strong, bold, beautiful coffee.</p>
+            </div>
+            <button class="collapsible">Coffeemaker</button>
+                <div class="content">
+                    <img src="image/gallery/coffee-maker-ronan-furuta-AjcABUQ7WuA-unsplash.jpg" alt="Coffeemaker" class="item">
+                    <p>Depends on the machine, but its anatomy is similar to a pour over dripper. A conical filter sits above a pot. Place a paper filter (unless the device has a built-in reusable filter), fill it with ground coffee, and press “start.” Like a pour over, the paper filter results in a clarified mouthfeel. </p>
+                </div>
+            <button class="collapsible">Pour Over</button>
+                <div class="content">
+                    <img src="image/gallery/pour-over.jpg" alt="pour over" class="item">
+                    <p>Basic pour-overs come in a range of sizes and designs but generally brew directly into your mug through a paper filter. The most popular brand is the Melitta.
+                    To brew pour-over coffee, set up the pour-over on top of a mug and add a paper filter. The medium grounds go inside the filter, and then you pour boiling water on top.</p>
+                </div>
+            <button class="collapsible">Cold Brew</button>
+                <div class="content">
+                    <img src="image/gallery/cold-brew-an-nguyen-SIUaCpFN5cQ-unsplash.jpg" alt="cold brew" class="item">
+                    <p>Cold brew coffee is crisp and refreshing. The mouthfeel is silky and light. Depending on the kind of coffee you choose to use, profiles can be gorgeously fruity or tart, or chocolaty and rich. </p>
+                </div>
+        </section>
+        </main>
+    <footer>
+        <p>Craft Coffee © 2022</p>
+    </footer>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            } else {
+            content.style.maxHeight = content.scrollHeight + 100 + "px";
+            } 
+        });
+        }
+    </script>
+</body>
+</html>
